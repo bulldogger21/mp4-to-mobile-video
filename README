@@ -1,0 +1,3 @@
+This is a simple ruby script to convert MP4 files into a format that's usable for the PSP.  Files are converted and named properly for the PSP to use.  Once converted, the files are copied to a directory in the user's home (~/vidpsp/VIDEO).  After checking out the code you should run chmod +x on the file and invoke it simply with psp.rb file_name1 file_name2.  
+
+Authors: Lou Scoras, Vince Wadhwani
