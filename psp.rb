@@ -8,7 +8,7 @@ if ARGV.empty?
   puts "Usage: psp.sh video_name.m4v"
 end
 
-target = File.join("/home", ENV["LOGNAME"], "vidpsp", "VIDEO")
+target = File.join("/home", ENV["LOGNAME"], "Movies", "PSP", "Video")
 
 mkdir_p target
 
