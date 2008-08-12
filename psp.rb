@@ -15,7 +15,7 @@ ARGV.each do |video_file|
   count +=1
   puts "Starting conversion..." + count.to_s + "/" + ARGV.size.to_s
   #Newer PSP firmware no longer requires the MAQ1000x.MP4 format so we just use the filename
-  output = (video_file.gsub(/.m4v/, ""))
+  output = File.basename(video_file, '.m4v')
   output_file = File.join(target, "#{output}.MP4")
 
   unless File.exists?(output_file = File.join(target, "#{output}.MP4"))
