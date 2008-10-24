@@ -1,3 +1,14 @@
-This is a simple ruby script to convert MP4 files into a format that's usable for the PSP.  Files are converted and named properly for the PSP to use.  Once converted, the files are copied to a directory in the user's home (~/vidpsp/VIDEO).  After checking out the code you should run chmod +x on the file and invoke it simply with psp.rb file_name1 file_name2.  
+This is a simple ruby script to convert MP4 files into a format that's usable for the PSP and other mobile devices.  Once converted, the files are copied to a directory in the user's home (~/Movies/Mobile/Video).  After checking out the code you should run chmod +x on the file and invoke it simply with vid2go.rb file_name1 file_name2.  
 
 Authors: Lou Scoras, Vince Wadhwani
+
+October 24, 2008:  Extended the script to accept 2 arguments:
+
+-psp will format the video for use on the PSP. This also creates the Thumbnail
+-htcg1 will format the video for us on many mobile phones. Only tested on the G1 though
+
+Example usage: vid2go.rb -htcg1 video_name.m4v
+
+The code is also pretty expandable at this point so if anyone has any devices they want to add feel free to do that on your own.
+
+WARNING: If you're running this on Ubuntu you may need to change the codecs used.  Try h264 instead of libx264 and aac instead of libfaac. At some point I may try automating detection..
